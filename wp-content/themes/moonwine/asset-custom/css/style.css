@@ -1,0 +1,180 @@
+*{
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    --main: #114635;
+    --secondary: #E2DAC3;
+    --secondary-50: #e2dac387;
+    --tertiary: #DA8953;
+    --accent: #B83D42;
+}
+
+/*Font*/
+   @font-face {
+    font-family: "Molgak Classy";
+    src: url(../font/MolgakClassyRegular-lgX7d.ttf),
+    url(../font/MolgakClassyRegular-nRodg.otf);
+
+   }
+   @font-face {
+    font-family: "Now bold";
+    src: url(../font/MolgakClassyRegular-lgX7d.ttf);
+    font-weight: bold;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-ExtraBold.otf);
+    font-weight:bolder;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-ExtraLight.otf);
+    font-weight:200;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-Light.otf);
+    font-weight:lighter;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-Medium.otf);
+    font-weight:500;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now Regular";
+    src: url(../font/Now/Now-Regular.otf);
+    font-weight:normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-SemiBold.otf);
+    font-weight:600;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: "Now";
+    src: url(../font/Now/Now-Thin.otf);
+    font-weight:100;
+    font-style: normal;
+   }
+   
+body{
+    font-family: 'Now Regular',sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    background-color: rgb(35, 35, 35);
+} 
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Molgak Classy';
+}
+
+h1{
+    font-size: 150px;
+    line-height: 74.8px;
+}
+h2{
+    font-size: 48px;
+    line-height: 63.8px;
+}
+h3{
+    font-size: 40px;
+    line-height: 52.8px;
+}
+h4{
+    font-size: 32px;
+    line-height:424.9px;
+}
+h5{
+    font-size: 24px;
+    line-height: 31.9px;
+}
+h6{
+    font-size: 20px;
+    line-height: 26.4px;
+}
+
+/*Header*/
+#header{
+    width: 70%;
+    margin: auto;
+}
+
+.menu-1{
+    display: flex;
+    align-items: center;
+    color: var(--secondary-50);
+    text-decoration: none;
+    padding: 10px; 
+    gap: 10px;
+}
+.menu-menu-1-container{
+    width: 40%;
+}
+.site-branding{
+    margin: auto;
+}
+#menu-2{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: end;
+}
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+#menu li a {
+    color: var(--secondary-50);
+    text-decoration: none;
+    padding: 10px; 
+}
+#menu li a:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+
+}
+
+
+/*button*/
+.button{
+    background-color: var(--tertiary);
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    color: var(--secondary);
+}
+
+.button:hover {
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    color: var(--main);
+}
+/*button avec icone*/
+
+.btnIcn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.icone-button{
+    fill: var(--secondary);
+}
+
+button:hover > .icone-button{
+    fill: var(--main)!important;
+}
+
