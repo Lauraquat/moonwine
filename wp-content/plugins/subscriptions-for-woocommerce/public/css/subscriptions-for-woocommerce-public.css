@@ -1,0 +1,14 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .wps_sfw_account_wrap {
+ 	overflow-x: auto;
+ }
+ .wps_sfw_free_trial, .wps_sfw_signup_fee {
+    display: block;
+}
+.wps_sfw_experimental_feature_notice {
+    color: red;
+}
