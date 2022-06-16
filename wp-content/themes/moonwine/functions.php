@@ -150,6 +150,14 @@ function moonwine_scripts() {
 	wp_enqueue_style( 'moonwine-style', get_template_directory_uri().'/asset-custom/css/style.css'); // mon fichier css
 	wp_enqueue_script('moonwine-jquery', get_template_directory_uri().'/asset-custom/js/jquery.js'); // mon fichier jquery
 	wp_enqueue_script('moonwine-script', get_template_directory_uri().'/asset-custom/js/script.js'); // mon fichier js
+	//wp_enqueue_style( 'moonwine-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_style_add_data( 'moonwine-style', 'rtl', 'replace' );
+
+	//wp_enqueue_script( 'moonwine-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 }
 add_action( 'wp_enqueue_scripts', 'moonwine_scripts' );
 
