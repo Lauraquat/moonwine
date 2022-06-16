@@ -1,4 +1,5 @@
 <?php
+add_theme_support( 'woocommerce' );
 
 /** * OPEN SESSION PHP * * @return void */ 
 function register_my_session() { 
