@@ -26,7 +26,7 @@ class WC_Stripe_Manager {
 	 *
 	 * @var string
 	 */
-	public $version = '3.3.21';
+	public $version = '3.3.22';
 
 	/**
 	 *
@@ -79,7 +79,6 @@ class WC_Stripe_Manager {
 
 	public function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ), 10 );
-		add_action( 'init', array( $this, 'init' ) );
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
 		add_action( 'woocommerce_init', array( $this, 'woocommerce_dependencies' ) );
 		add_action( 'woocommerce_blocks_loaded', array( '\PaymentPlugins\Blocks\Stripe\Package', 'init' ) );

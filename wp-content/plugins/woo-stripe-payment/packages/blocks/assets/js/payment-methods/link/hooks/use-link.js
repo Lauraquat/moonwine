@@ -58,7 +58,7 @@ export const useLink = (
                     response.meta.billingData = toCartAddress({...billingAddress.address, recipient: billingAddress.name})
                 }
                 if (shippingAddress) {
-                    response.meta.shippingData = toCartAddress({...shippingAddress.address, recipient: shippingAddress.name})
+                    response.meta.shippingData = {address: toCartAddress({...shippingAddress.address, recipient: shippingAddress.name})};
                 }
                 // update the payment intent
                 try {

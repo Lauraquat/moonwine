@@ -194,7 +194,12 @@ function wc_stripe_woocommerce_payment_token_deleted( $token_id, $token ) {
 	if ( ! did_action( 'woocommerce_payment_gateways' ) ) {
 		WC_Payment_Gateways::instance();
 	}
-	do_action( 'wc_stripe_payment_token_deleted_' . $token->get_gateway_id(), $token_id, $token );
+	/**
+	 * @since 3.3.22 - only trigger this action if the delete request is coming from the my account page.
+	 */
+	if ( is_account_page() ) {
+		do_action( 'wc_stripe_payment_token_deleted_' . $token->get_gateway_id(), $token_id, $token );
+	}
 }
 
 /**

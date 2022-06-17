@@ -8,8 +8,8 @@ class Controller {
 
 	public function __construct() {
 		add_filter( 'woocommerce_payment_gateways', [ $this, 'add_payment_gateway' ] );
-		add_filter( 'woocommerce_store_api_checkout_update_order_from_request', [ $this, 'update_order' ] );
-		add_action( 'woocommerce_rest_checkout_process_payment_with_context', array( $this, 'payment_with_context' ), 10, 2 );
+		add_action( 'woocommerce_store_api_checkout_update_order_from_request', [ $this, 'update_order' ] );
+		add_action( 'woocommerce_rest_checkout_process_payment_with_context', array( $this, 'payment_with_context' ), 10 );
 	}
 
 	public function initialize() {

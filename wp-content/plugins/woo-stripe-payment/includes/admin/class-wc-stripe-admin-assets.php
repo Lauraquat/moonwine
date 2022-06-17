@@ -125,7 +125,7 @@ class WC_Stripe_Admin_Assets {
 						'temporary'    => esc_html__( 'This is a temporary deactivation', 'woo-stripe-payment' ),
 						'other'        => esc_html__( 'Other', 'woo-stripe-payment' )
 					],
-					'route'           => WC_Stripe_Rest_API::get_admin_endpoint( stripe_wc()->rest_api->feedback->rest_uri( 'feedback' ) )
+					'route'           => WC_Stripe_Rest_API::get_admin_endpoint( '/wc-stripe/v1/admin/feedback' )
 				] );
 			} );
 		}

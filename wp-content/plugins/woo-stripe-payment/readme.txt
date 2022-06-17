@@ -4,7 +4,7 @@ Tags: stripe, ach, klarna, credit card, apple pay, google pay, ideal, sepa, sofo
 Requires at least: 3.0.1
 Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 3.3.21
+Stable tag: 3.3.22
 Copyright: Payment Plugins
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -62,6 +62,10 @@ If you're site is not loading over https, then Stripe won't render the Payment R
 9. Stripe Link for high conversion
 
 == Changelog ==
+= 3.3.22 - 6/16/22
+* Updated - WC Tested up to 6.6
+* Fixed - Error that could be triggered on plugins page if WooCommerce deactivated
+* Fixed - WooCommerce Blocks Link integration autofill of shipping address
 = 3.3.21 - 6/4/22 =
 * Fixed - Error on checkout page when Payment Element is active and saved card used for payment
 * Fixed - Don't hide "save card" checkbox when Link is active on checkout page
