@@ -8,6 +8,8 @@ function myFunction() {
     document.getElementById('logoMoonwine').style.fill = "var(--main)";
     document.getElementById('content-discover').style.color = "var(--secondary)";
     document.getElementById('discover-img').className = "discover-img-scroll";
+    document.getElementById('slogan').className = "first-title-scroll";
+
   } else {
     document.getElementById("section-discover").className = "event-back-scroll";
     document.getElementById('menu').className = "menu-1";
@@ -15,6 +17,8 @@ function myFunction() {
     document.getElementById('discover').className = "";
     document.getElementById('discover-img').className = "discover-img";
     document.getElementById('content-discover').style.color = "var(--main)";
+    document.getElementById('slogan').className = "first-title";
+
   }
 }
 

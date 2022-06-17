@@ -313,17 +313,24 @@ h6{
     width: 100%;
 }
 
-#first-title{
+.first-title{
     color: var(--secondary);
     width: 50%;
     margin:148px auto 0 auto;
+    transition: 1s;
+}
+.first-title-scroll{
+    color: var(--secondary);
+    width: 50%;
+    margin:148px auto 0 auto;
+    transition: 1s;
 }
 
 .event-back-scroll{
     background-color: var(--secondary);
-    width: 93%;
+    width: auto;
     height: 274px;
-    margin: 0 60px;
+    margin: 0 120px;
     border-radius: 20px 20px 0 0;
     position: absolute;
     bottom: 0;
@@ -331,7 +338,7 @@ h6{
 }
 .event-scroll{
     background-color: var(--secondary);
-    width: 100%;
+    width: auto;
     height: 980px;
     margin: 0;
     border-radius: 20px 20px 0 0;

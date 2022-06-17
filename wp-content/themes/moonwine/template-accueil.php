@@ -9,7 +9,7 @@ $image_ap = get_field('ap_images');
 <main class="">
     <?php
     if( !empty( $image ) ): ?>
-        <h1 id="first-title"><?php the_field('slogan'); ?></h1>
+        <h1 id="slogan" class="first-title"><?php the_field('slogan'); ?></h1>
         <div id="image-accueil">
             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
         </div>
