@@ -4,7 +4,7 @@ get_header();
 
 $image = get_field('image_header');
 $image_discover = get_field('image_discover');
-$image_ap = get_field('ap_images');
+$image_ap = get_field('ap_image');
 ?>
 <main class="">
     <?php
